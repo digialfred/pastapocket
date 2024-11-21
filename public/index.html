@@ -25,15 +25,15 @@
             <div class="container">
                 <div class="header-content">
                     <div class="logo-nav-container">
-                        <a href="/index.html" class="logo-link">
+                        <a href="./index.html" class="logo-link">
                             <img src="./assets/img/logoamarillo.png" alt="Pasta Pocket" class="logo">
                         </a>
                         <nav class="main-nav">
-                            <a href="/index.html">Inicio</a>
-                            <a href="/menu.html">Menú</a>
-                            <a href="/promociones.html">Promociones</a>
-                            <a href="/ubicacion.html">Ubicación</a>
-                            <a href="/nosotros.html">Nosotros</a>
+                            <a href="./index.html">Inicio</a>
+                            <a href="./menu.html">Menú</a>
+                            <a href="./promociones.html">Promociones</a>
+                            <a href="./ubicacion.html">Ubicación</a>
+                            <a href="./nosotros.html">Nosotros</a>
                         </nav>
                     </div>
                     <div class="user-actions">
@@ -49,7 +49,108 @@
             </div>
         </header>
 
-        <main>
+        <main class="flex-1">
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">¡Bienvenido! <br>¿Qué te apetece hoy?</h1>
+                        <p class="hero-subtitle">Deliciosa pasta fresca con salsas e ingredientes a elección.
+                            ¡Rápido y delicioso!</p>
+                        <div class="hero-buttons">
+                            <a href="menu.html" class="btn btn-primary px-4 py-2 bg-primary text-white hover:bg-primary-700 transition-colors">
+                                ¡Haz tu pedido!
+                            </a>
+                            <a href="promociones.html" class="btn btn-secondary px-4 py-2 bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors">
+                                Ver Promociones
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--BENEFICIOS DE NUESTRO SERVICIO-->
+            <section class="w-full py-12 md:py-24 bg-muted">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
+                        Porque tu felicidad es nuestra receta secreta. </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="card">
+                            <div class="card-content">
+                                <i data-lucide="truck" class="h-12 w-12 mb-4 text-primary"></i>
+                                <h3 class="text-lg font-semibold mb-2">Envío gratis</h3>
+                                <p class="text-center text-sm text-gray-500">En pedidos superiores a $19.990</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <i data-lucide="clock" class="h-12 w-12 mb-4 text-primary"></i>
+                                <h3 class="text-lg font-semibold mb-2">Atención rápida</h3>
+                                <p class="text-center text-sm text-gray-500">Disfruta de tu pedido antes de lo que
+                                    imaginas.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <i data-lucide="credit-card" class="h-12 w-12 mb-4 text-primary"></i>
+                                <h3 class="text-lg font-semibold mb-2">Pago seguro</h3>
+                                <p class="text-center text-sm text-gray-500">Múltiples opciones de pago</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <i data-lucide="utensils" class="h-12 w-12 mb-4 text-primary"></i>
+                                <h3 class="text-lg font-semibold mb-2">Personalización</h3>
+                                <p class="text-center text-sm text-gray-500">Elige tus ingredientes favoritos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--OFERTAS ESPECIALES-->
+            <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+                <div class="container px-4 md:px-6">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Ofertas
+                        especiales</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                            <img src="./assets/img/combo2.jpeg" alt="Combo para 2" class="w-full h-48 object-cover">
+                            <div class="card-content p-6">
+                                <h3 class="text-2xl font-semibold mb-2">Dos es mejor que uno.</h3>
+                                <p class="text-sm text-gray-600 mb-4">Disfruta el segundo vaso a mitad de precio con
+                                    nuestro combo especial. Incluye dos Tallarines con salsa boloñesa más albóndigas
+                                    y dos bebidas a elección.</p>
+                                <p class="precio">$10.990</p>
+                                <button class="btn btn-primary w-full">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                            <img src="./assets/img//combo4.jpeg" alt="Combo familiar para 4" class="w-full h-48 object-cover">
+                            <div class="card-content p-6">
+                                <h3 class="text-2xl font-semibold mb-2">De Lujo para 4</h3>
+                                <p class="text-sm text-gray-600 mb-4">Perfecto para un almuerzo con tus amigos o una
+                                    cena familiar. Este combo incluye cuatro pastas Fetuccini con salsa de cuatro
+                                    quesos y Tocino, cuatro bebidas a elección.</p>
+                                <p class="precio">$39.990</p>
+                                <button class="btn btn-primary w-full">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                            <img src="./assets/img//combo3.jpeg" alt="Oferta para estudiantes Junaeb"
+                                class="w-full h-48 object-cover">
+                            <div class="card-content p-6">
+                                <h3 class="text-2xl font-semibold mb-2">Tarjeta Junaeb</h3>
+                                <p class="text-sm text-gray-600 mb-4">Estudiantes, ¡Esta oferta es para ustedes!
+                                    Presenta tu tarjeta Junaeb y obtén un 25% de descuento en Ravioles con queso y
+                                    llevate una bebida Coca-cola Zero gratis.</p>
+                                <p class="precio">$3.990</p>
+                                <button class="btn btn-primary w-full">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!--NUESTROS PRODUCTOS-->
             <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
                 <div class="container px-4 md:px-6">
@@ -59,7 +160,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 1" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/bolognesa.jpeg" />
+                                    src="./assets/img//bolognesa.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta Bolognesa.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Carne molida, tomates, albahaca,
                                     caldo, vino tinto, aceite de oliva y verduras salteadas.</p>
@@ -84,7 +185,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 2" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/camarones.jpeg" />
+                                    src="./assets/img//camarones.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta con Camarones.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Crema, leche, cebollin, ajo,
                                     pimienta, camarones frescos salteados con mantequilla.</p>
@@ -107,7 +208,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 3" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/betarraga.jpeg" />
+                                    src="./assets/img//betarraga.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta especial de la casa.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Limón, aceite de oliva, sal, salsa
                                     de betarragas, mayonesa, betarragas en cubitos, sésamo.</p>
@@ -130,7 +231,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 4" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/cuatro quesos.jpeg" />
+                                    src="./assets/img//cuatro quesos.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta Cuatro Quesos.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Mantequilla, leche, sal, pimienta,
                                     queso Parmesano, Mozzarella, Gorgonzola y Ricotta.</p>
@@ -153,7 +254,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 5" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/fetuchini al pesto.jpeg" />
+                                    src="./assets/img//fetuchini al pesto.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta al Pesto.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Albahaca, queso parmesano, nueces,
                                     ajo, aceite de oliva extra virgen, sal y pimienta negra.</p>
@@ -176,7 +277,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 6" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/pollo.jpeg" />
+                                    src="./assets/img//pollo.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta con ave.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Cebolla, pimenton, ajo, zanahoria,
                                     orégano, sal, pimienta, salsa de tomate y trocitos de pollo.</p>
@@ -199,7 +300,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 7" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/tocino.jpeg" />
+                                    src="./assets/img//tocino.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta con Tocino y Huevos.</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Mantequilla, sal, pimienta, queso
                                     parmesano, tocino frito cortado en tiritas y huevos revueltos.</p>
@@ -222,7 +323,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 8" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/salsa blanca.jpeg" />
+                                    src="./assets/img//salsa blanca.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta con crema y champiñon</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Champiñones salteados, cebolla,
                                     mantequilla, crema, sal, pimienta y un toque de harina.</p>
@@ -245,7 +346,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <img alt="Pasta 9" class="w-full h-48 object-cover rounded-md mb-4"
-                                    src="./assets/img/verduras.jpeg" />
+                                    src="./assets/img//verduras.jpeg" />
                                 <h3 class="text-xl font-bold mb-2">Pasta Veggie</h3>
                                 <p class="text-gray-500 dark:text-gray-400 mb-4">Salteado de Broccoli, ajo, tomates
                                     cherry, semillas de sésamo, albahaca, aceite de oliva, sal y un toque de limon.
@@ -269,6 +370,100 @@
                     </div>
                 </div>
             </section>
+
+
+            <!-- FORMULARIO DE UNETE AL CLUB -->
+            <section class="club-signup py-12 md:py-24 lg:py-32">
+                <div class="container mx-auto px-4 md:px-6">
+                    <div class="signup-content max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                        <!-- Logo del Club -->
+                        <img src="./assets/img/pastarocket.png" alt="Club Pasta Rocket Logo"
+                            class="club-logo mx-auto rounded-full mb-6">
+
+
+                        <h2 class="text-3xl font-bold text-center mb-4">Únete al Club Pasta Rocket</h2>
+                        <p class="subtitle text-center text-lg text-gray-500 mb-6">Recibe descuentos especiales,
+                            cupones y novedades exclusivas.</p>
+
+                        <!-- Formulario -->
+                        <form class="signup-form space-y-6">
+                            <!-- Campo de Nombre -->
+                            <div class="form-group">
+                                <label for="name" class="block text-lg font-medium text-gray-700">Nombre</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                    placeholder="Tu nombre">
+                            </div>
+
+                            <!-- Campo de Email -->
+                            <div class="form-group">
+                                <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                    placeholder="tu@email.com">
+                            </div>
+
+                            <!-- Botón de Enviar -->
+                            <button type="submit"
+                                class="submit-btn w-full p-3 mt-6 rounded-md bg-primary-500 text-white font-bold hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                Unirme al Club
+                            </button>
+                        </form>
+
+                        <p class="disclaimer text-center text-sm text-gray-500 mt-4">Al unirte, aceptas recibir
+                            correos electrónicos promocionales. Puedes darte de baja en cualquier momento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ELIGENOS A NOSOTROS -->
+            <section class="eligenos-section w-full py-8 md:py-16 lg:py-20 bg-primary text-primary-foreground">
+                <div class="container px-4 md:px-6">
+                    <div class="flex flex-col items-center md:flex-row md:space-x-6">
+                        <!-- Contenedor del texto -->
+                        <div class="md:w-1/2 space-y-4 text-center md:text-left">
+                            <h2
+                                class="eligenos-title text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+                                ¿Por qué elegir Pasta Pocket?
+                            </h2>
+                            <p class="max-w-[500px] text-primary-foreground/80 text-base sm:text-lg mt-4">
+                                En Pasta Pocket, convertimos cada plato en una obra maestra culinaria. Nuestras pastas
+                                frescas,
+                                elaboradas al momento, están diseñadas para brindarte una experiencia auténtica e
+                                inolvidable. ¿Te gusta personalizar tu comida? ¡Estamos contigo! Ofrecemos una variedad
+                                irresistible de ingredientes como pollo jugoso, albóndigas sabrosas, camarones frescos y
+                                mucho más,
+                                para que crees tu combinación perfecta.
+                            </p>
+                            <p class="max-w-[500px] text-primary-foreground/80 text-base sm:text-lg mt-4">
+                                Lo que realmente nos diferencia no es solo la calidad excepcional de nuestros
+                                ingredientes, sino
+                                también nuestro compromiso con el servicio cálido y amigable. Para nosotros, cada
+                                cliente es
+                                especial, y queremos que cada visita a Pasta Pocket se sienta como un momento único
+                                y lleno de cariño.
+                            </p>
+                            <!-- Contenedor de la imagen -->
+                            <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center items-center">
+                                <div class="nosotros-image-container w-full max-w-[500px]">
+                                    <!-- Clases para controlar el ancho -->
+                                    <img src="./assets/img/nosotros-2.png" alt="Pasta Pocket Experience"
+                                        class="nosotros-image w-full h-auto object-cover rounded-lg" />
+                                </div>
+                            </div>
+                            <a href="nosotros.html">
+                                <button class="btn btn-secondary bg-secondary-500 text-white hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 p-3 rounded-md mt-4">
+                                    Conoce más sobre nosotros
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
         </main>
 
         <!--PIE DE PAGINA-->
