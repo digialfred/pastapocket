@@ -11,8 +11,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "fs-extra": "^11.2.0",
     "handlebars": "^4.7.8",
+=======
+>>>>>>> 823f6a666534995100101354a5d2ef47f724d639
     "nodemon": "^3.1.7"
   }
 }
