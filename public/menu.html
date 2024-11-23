@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Pocket ¡Rápido y delicioso!</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- FUENTE DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Licorice&family=Questrial&display=swap"
+        rel="stylesheet">
+    <!-- FUENTE DE GOOGLE -->
+</head>
+
+<!--ACA COMIENZA EL CUERPO DE LA PAGINA-->
+
+<body>
+    <div class="flex-col min-h-screen">
+        <header class="sticky top-0 z-50 w-full border-b bg-background">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-nav-container">
+                        <a href="/index.html" class="logo-link">
+                            <img src="./assets/img/logoamarillo.png" alt="Pasta Pocket" class="logo">
+                        </a>
+                        <nav class="main-nav">
+                            <a href="/index.html">Inicio</a>
+                            <a href="/menu.html">Menú</a>
+                            <a href="/promociones.html">Promociones</a>
+                            <a href="/ubicacion.html">Ubicación</a>
+                            <a href="/nosotros.html">Nosotros</a>
+                        </nav>
+                    </div>
+                    <div class="user-actions">
+                        <button class="icon-button" aria-label="Ingresar">
+                            <i data-lucide="user"></i>
+                        </button>
+                        <button class="icon-button cart-button" aria-label="Carrito">
+                            <i data-lucide="shopping-cart"></i>
+                            <span class="cart-items">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="crea-tu-pasta" class="w-full py-12 md:py-24 lg:py-32 bg-pasta-light">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-pasta-dark">
+                    Crea tu Pasta Perfecta
+                </h2>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="pasta-select-container">
+                        <label for="pasta-type" class="pasta-label">Tipo de fideo</label>
+                        <select id="pasta-type" class="pasta-select">
+                            <option value="">Selecciona</option>
+                            <option value="spaghetti">Spaghetti</option>
+                            <option value="tallarines">Tallarines</option>
+                            <option value="fetuchini">Fettuccini</option>
+                            <option value="corbatas">Farfalle</option>
+                            <option value="espirales">Rotini</option>
+                            <option value="tubitos">Rigatoni</option>
+                            <option value="caracoles">Conchiglie</option>
+                            <option value="ravioli">Ravioles</option>
+                            <option value="gnochi">Gnocchi</option>
+                        </select>
+                    </div>
+                    <div class="pasta-select-container">
+                        <label for="sauce" class="pasta-label">Salsa</label>
+                        <select id="sauce" class="pasta-select">
+                            <option value="">Selecciona</option>
+                            <option value="tomato">Pomodoro</option>
+                            <option value="alfredo">Alfredo</option>
+                            <option value="pesto">Pesto</option>
+                            <option value="bolognese">Boloñesa</option>
+                            <option value="queso">Cuatro Quesos</option>
+                            <option value="verduras">Verduras</option>
+                            <option value="champiñones">Champiñones</option>
+                            <option value="aji">Picante</option>
+                            <option value="ajo">Aglio e Olio</option>
+                            <option value="mantequilla">Mantequilla y queso rallado</option>
+                        </select>
+                    </div>
+                    <div class="pasta-select-container">
+                        <label for="topping" class="pasta-label">Adición</label>
+                        <select id="topping" class="pasta-select">
+                            <option value="">Selecciona</option>
+                            <option value="chicken">Pollo</option>
+                            <option value="meatballs">Albóndigas</option>
+                            <option value="shrimp">Camarones</option>
+                            <option value="vegetables">Vegetales</option>
+                            <option value="bacon">Tocino</option>
+                            <option value="parmesan">Queso Parmesano</option>
+                            <option value="sausage">Salchicha italiana</option>
+                            <option value="olives">Aceitunas</option>
+                        </select>
+                    </div>
+                    <div class="pasta-select-container">
+                        <label for="drink" class="pasta-label">Bebida</label>
+                        <select id="drink" class="pasta-select">
+                            <option value="">Selecciona</option>
+                            <option value="soda1">Coca-Cola</option>
+                            <option value="soda2">Sprite</option>
+                            <option value="soda3">Fanta</option>
+                            <option value="lemonade">Limonada con gengibre</option>
+                            <option value="water">Agua</option>
+                            <option value="sparkling-water">Agua con gas</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-full mt-6 pasta-button">Añadir al carrito</button>
+            </div>
+        </section>
+
+        
+
+
+        <!--PIE DE PAGINA-->
+        <footer class="w-full py-12 bg-gray-100 dark:bg-gray-800">
+            <div class="container px-4 md:px-6">
+                <div class="grid gap-8 lg:grid-cols-4">
+
+                    <!-- LOGO Y DESCRIPCIÓN -->
+                    <div class="space-y-4">
+                        <img alt="Pasta Pocket Logo" class="h-12 w-auto" src="./assets/img/logorojo.png" />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Deliciosa pasta fresca con salsas a elección. ¡Rápido y de calidad!
+                        </p>
+                    </div>
+
+                    <!-- CONTACTO -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Contacto</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Avenida Libertad 765, Viña del Mar</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Teléfono: +56 32 345 6789</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Email: contacto@pastapocket.cl</p>
+                    </div>
+
+
+                    <!-- REDES SOCIALES -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Síguenos</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="icon-link">
+                                <i data-lucide="facebook" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="twitter" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="instagram" class="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MÉTODOS DE PAGO -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Paga Seguro</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="icon-link">
+                                <i data-lucide="credit-card" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="shield-check" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="lock" class="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FINAL DE PÁGINA -->
+                <div class="mt-8 border-t border-gray-300 pt-6 flex justify-center">
+                    <p class="text-center text-xs text-gray-500 dark:text-gray-400">
+                        © 2024 Pasta Pocket. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons(); // Inicializa los iconos Lucide
+    </script>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

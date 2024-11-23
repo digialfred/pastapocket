@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Pocket ¡Rápido y delicioso!</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- FUENTE DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Licorice&family=Questrial&display=swap"
+        rel="stylesheet">
+    <!-- FUENTE DE GOOGLE -->
+</head>
+
+<!--ACA COMIENZA EL CUERPO DE LA PAGINA-->
+
+<body>
+    <div class="flex-col min-h-screen">
+        <header class="sticky top-0 z-50 w-full border-b bg-background">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-nav-container">
+                        <a href="/index.html" class="logo-link">
+                            <img src="./assets/img/logoamarillo.png" alt="Pasta Pocket" class="logo">
+                        </a>
+                        <nav class="main-nav">
+                            <a href="/index.html">Inicio</a>
+                            <a href="/menu.html">Menú</a>
+                            <a href="/promociones.html">Promociones</a>
+                            <a href="/ubicacion.html">Ubicación</a>
+                            <a href="/nosotros.html">Nosotros</a>
+                        </nav>
+                    </div>
+                    <div class="user-actions">
+                        <button class="icon-button" aria-label="Ingresar">
+                            <i data-lucide="user"></i>
+                        </button>
+                        <button class="icon-button cart-button" aria-label="Carrito">
+                            <i data-lucide="shopping-cart"></i>
+                            <span class="cart-items">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <p>Pasta Pocket
+                    Ven a visitarnos y disfruta de nuestros deliciosos fideos en un ambiente acogedor y familiar.
+
+                    Ubicación:
+
+                    Dirección: Avenida Libertad 765, Viña del Mar.
+                    Referencia: frente a Banco Edwards.
+
+                    Horarios de atención:
+
+                    Lunes a Viernes: De 12:00 a 21:00
+                    Sábados y Domingos: Cerrado.
+                    Feriados: De 12:00 a 18:00</p>
+            </div>
+            <section class="mapa-nav">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.5866500905863!2d-71.55278442360579!3d-33.01467157356529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde7be3574f3%3A0x760b0baac607b86b!2sAv.%20Libertad%20765%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1732048968496!5m2!1ses-419!2scl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+
+        <!--PIE DE PAGINA-->
+        <footer class="w-full py-12 bg-gray-100 dark:bg-gray-800">
+            <div class="container px-4 md:px-6">
+                <div class="grid gap-8 lg:grid-cols-4">
+
+                    <!-- LOGO Y DESCRIPCIÓN -->
+                    <div class="space-y-4">
+                        <img alt="Pasta Pocket Logo" class="h-12 w-auto" src="./assets/img/logorojo.png" />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Deliciosa pasta fresca con salsas a elección. ¡Rápido y de calidad!
+                        </p>
+                    </div>
+
+                    <!-- CONTACTO -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Contacto</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Avenida Libertad 765, Viña del Mar</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Teléfono: +56 32 345 6789</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Email: contacto@pastapocket.cl</p>
+                    </div>
+
+
+                    <!-- REDES SOCIALES -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Síguenos</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="icon-link">
+                                <i data-lucide="facebook" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="twitter" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="instagram" class="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MÉTODOS DE PAGO -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Paga Seguro</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="icon-link">
+                                <i data-lucide="credit-card" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="shield-check" class="icon"></i>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <i data-lucide="lock" class="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FINAL DE PÁGINA -->
+                <div class="mt-8 border-t border-gray-300 pt-6 flex justify-center">
+                    <p class="text-center text-xs text-gray-500 dark:text-gray-400">
+                        © 2024 Pasta Pocket. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons(); // Inicializa los iconos Lucide
+    </script>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

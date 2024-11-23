@@ -1,0 +1,599 @@
+/* Estilos generales */
+:root {
+  --primary-color: #A91B18;
+  --secondary-color: #FDCC68;
+  --background-color: #f7f7f7;
+  --text-color: #333333;
+  --muted-color: #777777;
+}
+
+/* Estructura general */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Estilo general */
+body {
+  font-family: 'Questrial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h2 {
+  color:var(--text-color);
+  font-size: 38px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--primary-color);
+}
+
+.user-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: var(--primary-color);
+}
+
+.cart-button {
+  position: relative;
+}
+
+.cart-items {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Hero section styles */
+.hero-section {
+  background-image: url('assets/salsas.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 0px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3333335e;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.hero-title {  
+  font-family: 'Lato';
+  font-size: 4.5rem;
+  font-weight: 900;
+  font-style: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.87); /* Sombra del texto */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 8px 2px ;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 4rem;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Questrial', Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color:var(--text-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: rgb(255, 255, 255);
+  color: var(--primary-color);
+}
+
+/*Tarjetas*/
+.card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.object-cover {
+  width: 100%;
+  height: auto;
+}
+
+.precio {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 8px 0px; /* Mantener el padding para un espaciado interno cómodo */
+
+}
+
+.star {
+  transition: color 0.2s ease-in-out;
+}
+
+
+.rating span {
+  color: var(--secondary-color);
+
+}
+
+.rating p{
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+
+/* Estilos del formulario */
+.club-signup {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.club-logo {
+  width: 200px; /* Controla el ancho */
+  height: 200px; /* Controla la altura */
+  object-fit: contain; /* Mantiene las proporciones */
+}
+
+/* Ajustes responsivos */
+@media (min-width: 768px) {
+  .signup-content {
+      width: 80%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  .club-logo {
+      width: 300px;
+  }
+
+  .submit-btn {
+      font-size: 16px;
+  }
+}
+
+.signup-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 50px 50px 15px 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #A91B18;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color:  var(--secondary-color);
+  color: var(--text-color);
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Estilos de la sección "¿Por qué elegir Pasta Pocket?" */
+.bg-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem 1rem; /* Reduce padding para mejor responsividad */
+  text-align: center;
+}
+
+.eligenos-section {
+  position: relative; /* Asegura que el pseudo-elemento se posicione dentro del contenedor */
+  display: flex;
+  flex-direction: column; /* Columnas en móviles */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Espaciado entre elementos */
+  padding: 4rem 1rem;
+  background-image: url('assets/ninapasta.jpeg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Asegura que el contenido esté por encima del pseudo-elemento */
+}
+
+.eligenos-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4d0605b0; /* Más opacidad para mejorar la legibilidad */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.nosotros-image-container {
+  width: 350px; 
+  height: 350px; 
+  border-radius: 50%; 
+  background-color: white; 
+  border: 5px solid white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: 0 auto; /* Añadido para centrar horizontalmente */
+}
+
+.nosotros-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+
+
+@media (min-width: 768px) {
+  .eligenos-section {
+    flex-direction: row; /* Dos columnas en pantallas medianas */
+    align-items: flex-start; /* Ajusta alineación en pantallas grandes */
+    gap: 3rem;
+  }
+}
+
+.eligenos-title {
+  font-family: 'Licorice', cursive;
+  font-size: 3rem;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .eligenos-title {
+    font-size: 4.5rem;
+    text-align: center; /* Alineación izquierda en pantallas grandes */
+  }
+}
+
+@media (min-width: 768px) {
+  .te-esperamos {
+    font-size: 3rem;
+    text-align: center; /* Alineación izquierda en pantallas grandes */
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.125rem; /* Tamaño ligeramente mayor en pantallas grandes */
+  }
+}
+
+/* Botón */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color); /* Color más oscuro en hover */
+  color: var(--text-color);
+}
+
+
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 3rem 0;
+  }
+  
+  footer h3 {
+    color: var(--secondary-color);
+  }
+  
+  footer p {
+    color: #cccccc;
+  }
+  
+  .icon {
+    width: 24px; /* Ajusta el tamaño del icono */
+    height: 24px;
+    color: white; /* Asegúrate de que el color sea blanco */
+}
+
+.icon-link:hover .icon {
+    color: #FDCC68; /* Cambia el color al pasar el mouse */
+}
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .menu-button {
+      display: none;
+    }
+  }
+
+  /*MENU*/
+
+  /* Estilos para la sección "Crea tu Pasta Perfecta" */
+.bg-pasta-light {
+  background-color: #FFF5E6;
+}
+
+.text-pasta-dark {
+  color: var(--text-color);
+}
+
+.pasta-select-container {
+  margin-bottom: 1rem;
+}
+
+.pasta-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.pasta-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #FFD700;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: #FFFFFF;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.pasta-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.25);
+}
+
+.pasta-button {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.pasta-button:hover {
+  background-color: var(--text-color);
+}
